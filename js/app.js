@@ -289,3 +289,252 @@
 
   //}
 //} while (option != 0 && option != null);
+
+//Ejemplo de objetos
+
+//let star = {
+ 
+  //name: "polaris",
+  //constellation: "Ursa minor",
+  //type: "Double/Cepheid",
+  //Spectralclass: "F7",
+  //mag: 2.5 ,
+  //"": "aceptable",
+//}
+
+//console.log(star.mag);
+
+//star.constellation = "Ursa Mayor";
+
+//console.log(star.constellation);
+
+//let num1 =4;
+//let num2 = num1;
+//console.log(num2);
+//num2=7;
+//console.log(num1);
+//console.log(num2);
+
+//let star2 = star;
+
+//star2.name="Mizar";
+//star.mag=5.7;
+
+//console.log(star.name);
+//console.log(star2.name);
+
+
+//let hero ={
+ // character: "Iron man",
+  //name: "Tony Stark",
+  //powers:[
+    //"genius, level interesting",
+    //"Multiple power armor suits",
+    //"Ability fly"
+  //],
+
+  //info:{
+    //yearcreated: 1963,
+    //powerorigin: "From his suit",
+   // weapons:[
+     //   "Repulsor rays",
+       // "uni -bean projector",
+        //"leasers",
+    //],
+    //didyouknow: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  //},
+
+
+//}
+
+//let hero2 = new Object()
+//hero2.character= "Azul";
+//hero2.name = "Bruce banner";
+//hero2.powers = [
+
+  //  "Fuerza",
+   // "velocidad",
+   // "resistencia",
+   // "stamina",
+   // "invulneravility",
+   // "Breathing underwater",
+//];
+
+//console.log(Object.keys(hero2));
+//console.log(Object.keys(hero)
+ 
+//function compare(value1,value2) {
+
+  //console.log("Value 1 vale :",value1);
+  //console.log("Value 2 vale :",value2);
+  
+//}
+
+//compare(2,3);
+
+//function numaleatorio(min,max) {
+
+// console.log( Math.floor(Math.random()*(max -min + 1))+ min);
+  
+//}
+//for (let index = 0; index < 20; index++) {
+  
+  //numaleatorio(4,7);
+  
+//}
+//numaleatorio(4,7);
+//numaleatorio(100,120);
+
+//function comapre(value1,value2) {
+  //console.log("Working...");
+  //if(value1 < value2){
+
+    //return-1;
+
+  //}else if(value1 > value2){
+//return ;
+  //}else{
+
+    //return 0;
+  //}
+  
+//}
+
+//let number = [0 , 1,5,10,15];
+//let copyofnumbre =[...number];
+//let copy2ofnumbre = Array.from(number);
+
+//copyofnumbre.reverse();
+//console.log(number);
+//console.log(copyofnumbre);
+//console.log(copy2ofnumbre);
+//copy2ofnumbre.sort();
+//console.log(copy2ofnumbre);
+
+//let teams = ["Sebastian", "Resurreccion","Isaias", "Tamara","Rene","Fran"];
+
+//teams.sort();//Ordena array de letras
+//console.log(teams);
+//copy2ofnumbre.sort(comapre);
+//console.log(copy2ofnumbre);
+
+//let unoderenumber = [20,-8,3,3,102,43,18];
+//let counter =0;
+//unoderenumber.sort(comapre);
+//console.log(unoderenumber);
+//let result = comapre(3,3);
+//console.log(result);
+//unoderenumber.sort(
+
+  //function(value1,value2) {
+    // counter++;
+     //console.log("Value1",value1);
+     //console.log("value 2",value2);
+     //return value1-value2;   
+  //}
+//);
+//console.log(counter);
+//console.log(unoderenumber);
+//unoderenumber.sort(
+  //(value1,value2) => value2 -value1
+//);
+//console.log(unoderenumber);
+
+// Traditional methods for ordering arrays
+//let numbers = [3, 9, 8, 1, 4];
+//for (let i = 0; i < numbers.length - 2; i++) {
+//console.log(numbers);
+//for (let j = 0, aux = 0; j < numbers.length - 1; j++) {
+//if (numbers[j] > numbers[j + 1]) {
+//aux = numbers[j];
+//numbers[j] = numbers[j + 1];
+//numbers[j + 1] = aux;
+//}
+//}
+//}
+//console.log(numbers);
+
+//["Aragon","Andaucia","Galicia","Madrid"].forEach((element,index,array) =>
+  //{
+    //console.log(`${element} is a index ${index} in ${array}`);
+    
+  //}
+  
+  //);
+
+  //[..."Soberano de Aragonés"].forEach((letter) =>{
+
+    //console.log(letter);
+  //}
+
+  //);
+  //let number = [1,2,3];
+  //let mapnumber = [1,2,3].map(
+
+    //number => number*2
+  //);
+
+  //console.log(mapnumber);
+
+  //let filetrednumber = number.filter(number => number <3);
+  //console.log(filetrednumber);
+  //console.log(number.every(number => number>2));
+//console.log(
+//number.some(number => number >2)
+//);
+
+///let totalsum = number.reduce((accun , number)=> accun+number,0);
+//totalsum = number.reduce((accun , number)=> accun+number,0);
+//console.log(totalsum);
+//totalsum = 0;
+//totalsum = number.reduceRight((accun , number)=> accun+number,0);
+//console.log(totalsum);
+
+//let calendar = new Array(5);
+
+//for (let i = 0; i < calendar.length; i++) {
+
+  //calendar[i] = new Array(7);
+  
+//}
+
+//for (let row = 0 , day=1 ; row < calendar.length; row++) {
+   
+  //for (let col = 0; col < calendar[row].length; col++) {
+    //if (day<31) {
+
+      //calendar[row][col]=day++;
+      
+    //}else if(day == 31){
+
+      //calendar[row][col]=day++;
+      //day = 1;
+
+    //}
+  //}
+  
+//}
+//console.log(calendar);
+
+
+//function sayhello(moment,name) {
+
+  //console.log(`hi good ${moment} , ${name}`);
+  //return name.length;
+//}
+//let letters=0;
+//letters = sayhello("afternoon","Antonio");
+//console.log(`your name has ${letters} letters`);
+//letters = sayhello("night", "Nacho");
+//console.log(`your name has ${letters} letters`);
+//letters = sayhello("morning","Pablo");
+//console.log(`your name has ${letters} letters`);
+
+const sum = function (num1,num2) {
+  return num1+num2;
+}
+const sum2 = (num1,num2) => num1+num2;
+
+console.log(sum(2,2));
+console.log(sum(2,4));
+console.log(sum(0,4));
